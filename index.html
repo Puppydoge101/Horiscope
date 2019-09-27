@@ -1,0 +1,236 @@
+<html>
+  <head>
+    <title></title>
+    <script>
+      var sign = " ";
+      function getSign()
+      {
+        getElementById('day').value;
+        getElementById('month').value;
+        if (month == january)
+        {
+          if (day >=20)
+          {
+            sign = Aquarius;
+          }
+          else
+          {
+            sign = Capricorn;
+          }
+        }
+        else if (month == february)
+        {
+          if (day >=19)
+          {
+            sign = Pisces;
+          }
+          else
+          {
+            sign = Aquarius;
+          }
+        }
+        else if (month == march)
+        {
+          if (day >=21)
+          {
+            sign = Aries;
+          }
+          else
+          {
+            sign = Pisces;
+          }
+        }
+        else if (month == april)
+        {
+          if (day >=20)
+          {
+            sign = Taurus;
+          }
+          else
+          {
+            sign = Aries;
+          }
+        }
+        else if (month == may)
+        {
+          if (day >=21)
+          {
+            sign = Gemini;
+          }
+          else
+          {
+            sign = Taurus;
+          }
+        }
+        else if (month == june)
+        {
+          if (day >=21)
+          {
+            sign = Cancer;
+          }
+          else
+          {
+            sign = Gemini;
+          }
+        }
+        else if (month == july)
+        {
+          if (day >=23)
+          {
+            sign = Leo;
+          }
+          else
+          {
+            sign = Cancer;
+          }
+        else if (month == august)
+        {
+          if (day >=23)
+          {
+            sign = Virgo;
+          }
+          else
+          {
+            sign = Leo;
+          }
+        }
+        else if (month == september)
+        {
+          if (day >=23)
+          {
+            sign = Libra;
+          }
+          else
+          {
+            Sign = Virgo
+          }
+        }
+        else if (month == october)
+        {
+          if (day >=23)
+          {
+            sign = Scorpio;
+          }
+          else
+          {
+            sign = Libra;
+          }
+        }
+        else if (month == november)
+        {
+          if (day >=22)
+          {
+            sign = Sagittarius;
+          }
+          else
+          {
+            sign = Scorpio;
+          }
+        }
+        else if (month == december)
+        {
+          if (day >=22)
+          {
+            sign = Capricorn;
+          }
+          else
+          {
+            sign = Sagittarius;
+          }
+        }
+        else
+        {
+
+        }
+
+      }
+    }
+      function getFortune()
+      {
+        if(sign == Aries)
+        {
+          document.getElementById("imgOutput").innerHTML = img src="Aries.png";
+          document.getElementById("nameOutput").innerHTML = "You are an Aries.";
+          document.getElementById("fortuneOutput").innerHTML = "You should be a good person today.";
+        }
+        else if(sign == Taurus)
+        {
+          document.getElementById("imgOutput").innerHTML = img src="Taurus.png";
+          document.getElementById("nameOutput").innerHTML = "You are a Taurus.";
+          document.getElementById("fortuneOutput").innerHTML = "You should be a good person today.";
+        }
+        else if(sign == Gemini)
+        {
+          document.getElementById("imgOutput").innerHTML = img src="Gemini.png";
+          document.getElementById("nameOutput").innerHTML = "You are a Gemini.";
+          document.getElementById("fortuneOutput").innerHTML = "You should be a good person today.";
+        }
+        else if(sign == Cancer)
+        {
+          document.getElementById("imgOutput").innerHTML = img src="Cancer.png";
+          document.getElementById("nameOutput").innerHTML = "You are a Cancer.";
+          document.getElementById("fortuneOutput").innerHTML = "You should be a good person today.";
+        }
+        else if(sign == Leo)
+        {
+          document.getElementById("imgOutput").innerHTML = img src="Leo.png";
+          document.getElementById("nameOutput").innerHTML = "You are a Leo.";
+          document.getElementById("fortuneOutput").innerHTML = "You should be a good person today.";
+        }
+        else if(sign == Virgo)
+        {
+          document.getElementById("imgOutput").innerHTML = img src="Virgo.png";
+          document.getElementById("nameOutput").innerHTML = "You are a Virgo.";
+          document.getElementById("fortuneOutput").innerHTML = "You should be a good person today.";
+        }
+        else if(sign == Libra)
+        {
+          document.getElementById("imgOutput").innerHTML = img src="Libra.png";
+          document.getElementById("nameOutput").innerHTML = "You are a Libra.";
+          document.getElementById("fortuneOutput").innerHTML = "You should be a good person today.";
+        }
+        else if(sign == Scorpio)
+        {
+          document.getElementById("imgOutput").innerHTML = img src="Scorpio.png";
+          document.getElementById("nameOutput").innerHTML = "You are a Scorpio.";
+          document.getElementById("fortuneOutput").innerHTML = "You should be a good person today.";
+        }
+        else if(sign == Sagittarius)
+        {
+          document.getElementById("imgOutput").innerHTML = img src="Sagittarius.png";
+          document.getElementById("nameOutput").innerHTML = "You are a Sagittarius.";
+          document.getElementById("fortuneOutput").innerHTML = "You should be a good person today.";
+        }
+        else if(sign == Capricorn)
+        {
+          document.getElementById("imgOutput").innerHTML = img src="Capricorn.png";
+          document.getElementById("nameOutput").innerHTML = "You are a Capricorn.";
+          document.getElementById("fortuneOutput").innerHTML = "You should be a good person today.";
+        }
+        else if(sign == Aquarius)
+        {
+          document.getElementById("imgOutput").innerHTML = img src="Aquarius.png";
+          document.getElementById("nameOutput").innerHTML = "You are an Aquarius.";
+          document.getElementById("fortuneOutput").innerHTML = "You should be a good person today.";
+        }
+        else if(sign == Pisces)
+        {
+          document.getElementById("imgOutput").innerHTML = img src="Pisces.png";
+          document.getElementById("nameOutput").innerHTML = "You are a Pisces.";
+          document.getElementById("fortuneOutput").innerHTML = "You should be a good person today.";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="day" value="Enter Day">
+    <input type="text" id="month" value="Enter Month(name, not number)">
+    <br>
+    <input type="button" value="Check Date" onclick="getSign()">
+    <input type="button" value="Get Fortune" onclick="getFortune()">
+    <span id="imgOutput"></span>
+    <br>
+    <span id="nameOutput"></span>
+    <span id="fortuneOutput"></span>
+  </body>
+</html>
